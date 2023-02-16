@@ -2,8 +2,10 @@ package module_10;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.*;
+import java.lang.reflect.Type;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -22,7 +24,7 @@ public class TestMod10 {
     }
 
     public static void isCorrectNumbers(String text) {
-        String strReg = "(\\(\\d{3}\\)\\s\\d{3}-\\d{4}\\b|\\d{3}-\\d{3}-\\d{4}\\b)";
+        String strReg = "((^\\(\\d{3}\\)\\s\\d{3}-\\d{4}\\b)|(^\\d{3}-\\d{3}-\\d{4}\\b))";
         Pattern p = Pattern.compile(strReg);
         Matcher m = p.matcher(text);
         if (m.find()) System.out.println(text);
@@ -83,5 +85,6 @@ public class TestMod10 {
         ObjectsToJson();
         //------------------------- Task #3
         RepeatedWords();
+
     }
 }
