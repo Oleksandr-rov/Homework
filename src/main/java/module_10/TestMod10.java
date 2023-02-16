@@ -77,11 +77,11 @@ public class TestMod10 {
     }
 
     public static void main(String[] args) {
-        System.out.println("Task #1");
+        //------------------------- Task #1
         validNumbers();
-        System.out.println("\nTask #2");
-        RepeatedWords();
-        System.out.println("\nTask #3");
+        //------------------------- Task #2
+        ObjectsToJson();
+        //------------------------- Task #3
         RepeatedWords();
     }
 }
