@@ -9,10 +9,9 @@ import java.util.stream.IntStream;
 
 public class Task1 {
     public static String getNamesByOddIndex(List<String> names) {
-        return IntStream.range(0, names.size() + 1)
-                .filter(i -> i % 2 != 0)
-                .peek(i -> System.out.println("i = " + i))
-                .mapToObj(i -> i + ". " + names.get(i-1))
+        return IntStream.range(0, names.size())
+                .filter(i -> i % 2 == 1)
+                .mapToObj(i -> i + ". " + names.get(i))
                 .collect(Collectors.joining(", "));
     }
 
