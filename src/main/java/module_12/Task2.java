@@ -16,5 +16,12 @@ public class Task2 {
         service.submit(fizzBuzzService::fizzbuzz);
         service.submit(fizzBuzzService::number);
         service.submit(fizzBuzzService::print);
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        service.shutdown();
     }
 }
