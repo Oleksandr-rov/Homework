@@ -18,7 +18,7 @@ public class Task1 {
 
         executor.scheduleAtFixedRate(() -> {
             System.out.println("Минуло 5 секунд");
-        }, 0, 5, TimeUnit.SECONDS);
+        }, 5, 5, TimeUnit.SECONDS);
 
         try {
             Thread.sleep(20000);
