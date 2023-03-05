@@ -88,7 +88,6 @@ public class User {
                 '}';
     }
 }
-
 class Address {
     private final String street;
     private final String suite;
@@ -103,7 +102,6 @@ class Address {
         this.zipcode = zipcode;
         this.geo = geo;
     }
-
     public String getStreet() {
         return street;
     }
@@ -134,7 +132,6 @@ class Address {
                 "       geo = " + geo;
     }
 }
-
 class Geo {
     private String lat;
     private String lng;

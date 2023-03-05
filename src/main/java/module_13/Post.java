@@ -47,4 +47,5 @@ public class Post {
                 "   body='" + body + '\'' + "\n" +
                 '}';
     }
+
 }

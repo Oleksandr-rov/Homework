@@ -165,4 +165,5 @@ public class HttpUtil {
         List<Todo> userList = new Gson().fromJson(response.body(), new TypeToken<List<Todo>>() {}.getType());
         return userList;
     }
+
 }
